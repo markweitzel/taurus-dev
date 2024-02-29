@@ -23,7 +23,7 @@ jobs:
   setup:
     name: Setup Environment
     runs-on: ubuntu-latest
-    if: github.event_name == 'pull_request' || (contains(github.event.ref, 'refs/heads') && !github.event.created)
+    # if: github.event_name == 'pull_request' || (contains(github.event.ref, 'refs/heads') && !github.event.created)
 
     outputs:
       type: ${{ steps.setup.outputs.type }}
