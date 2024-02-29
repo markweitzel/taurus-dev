@@ -41,9 +41,7 @@ jobs:
         run: azd auth login --tenant-id ${{ vars.AZURE_TENANT_ID }} --client-id ${{ vars.AZURE_CLIENT_ID }} --federated-credential-provider github
 
       - name: AZD Config
-        run: |
-          azd config set platform.type devcenter
-          azd env select contoso-shared-aks
+        run: azd env select contoso-shared-aks
 
       - name: AZD Deploy
         run: azd deploy
