@@ -9,6 +9,7 @@ platform:
   project: dcprj-pv44d74rp44bs
   environmentType: Dev
   environmentDefinition: Todo-Shared-AKS
+  catalog: test-catalog
 services:
   web:
     project: ./src/web
