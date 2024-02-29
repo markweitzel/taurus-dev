@@ -34,13 +34,6 @@ jobs:
           tenant-id: ${{ vars.AZURE_TENANT_ID }}
           subscription-id: ${{ vars.AZURE_SUBSCRIPTION_ID }}
 
-      - name: Update Environment
-        id: ade
-        uses: colbylwilliams/deployment-environments@main
-        with:
-          action: ensure
-          parameters: '{ "name": "${{ needs.setup.outputs.name }}", "size": "${{ needs.setup.outputs.type }}" }'
-
       - name: AZD Install
         run: curl -fsSL https://aka.ms/install-azd.sh | bash -s -- --version daily
 
