@@ -8,6 +8,7 @@ platform:
   name: dc-pv44d74rp44bs
   project: dcprj-pv44d74rp44bs
   environmentType: Dev
+  environmentDefinition: Todo-Shared-AKS
 services:
   web:
     project: ./src/web
