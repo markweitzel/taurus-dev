@@ -5,11 +5,12 @@ metadata:
   template: todo-nodejs-mongo-aks@0.0.1-beta
 platform:
   type: devcenter
-  name: dc-pv44d74rp44bs
-  project: dcprj-pv44d74rp44bs
-  environmentType: Dev
-  environmentDefinition: Todo-Shared-AKS
-  catalog: test-catalog
+  config:
+    name: dc-pv44d74rp44bs
+    project: dcprj-pv44d74rp44bs
+    environmentType: Dev
+    environmentDefinition: Todo-Shared-AKS
+    catalog: test-catalog
 services:
   web:
     project: ./src/web
