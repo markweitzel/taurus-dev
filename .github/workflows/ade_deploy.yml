@@ -1,4 +1,4 @@
-name: Deploy to ADE Environment
+name: Deploy to shared cluster
 
 permissions:
   id-token: write
@@ -6,13 +6,12 @@ permissions:
 
 on:
   workflow_dispatch:  
-  #push:
-  #  paths-ignore:
-  #    - .github/**
-  #    - .vscode/**
-  #    - README.md
-  #    - LICENSE
-  #  branches: main
+  push:
+    paths-ignore:
+      - .vscode/**
+      - README.md
+      - LICENSE
+    branches: main
   # pull_request:
   #  types: [synchronize]
 
