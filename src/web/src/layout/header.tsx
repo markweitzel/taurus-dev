@@ -39,7 +39,7 @@ const Header: FC = (): ReactElement => {
         <Stack horizontal>
             <Stack horizontal styles={logoStyles}>
                 <FontIcon aria-label="Check" iconName="SkypeCircleCheck" className={logoIconClass} />
-                <Text variant="xLarge">Todo-List</Text>
+                <Text variant="xLarge">My Todo List</Text>
             </Stack>
             <Stack.Item grow={1}>
                 <div></div>
